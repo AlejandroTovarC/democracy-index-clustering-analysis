@@ -12,6 +12,8 @@ This case study leverages The Economist Democracy Index, which includes 167 coun
 - [1] MSCI (2024). "Understanding Geopolitical Risk in Investments" - https://www.msci.com/www/blog-posts/understanding-geopolitical-risk/04906200027
 - [2] Sustainalytics (2024). "Country Risk Ratings" - https://www.sustainalytics.com/investor-solutions/esg-research/country-risk
 - [3] Wikipedia (2025). "The Economist Democracy Index" - https://en.wikipedia.org/wiki/The_Economist_Democracy_Index
+- [4] Our World in Data (2024). "Democracy Index" - https://ourworldindata.org/grapher/democracy-index-eiu
+- [5] Zhang, Y. et al. (2024). "Country risk mapping in a changing world—comparative survey on academic research and industrial practices" - https://link.springer.com/article/10.1007/s13198-024-02600-8
 
 Insights and recommendations are provided on the following strategic areas:
 
@@ -24,11 +26,11 @@ The Python clustering analysis and data preprocessing steps can be found [here](
 
 Static visualizations and country risk analysis charts can be found [here](https://www.notion.so/visualizations/).
     
-  ## Data Structure & Initial Checks
+## Data Structure & Initial Checks
     
-    The analysis utilizes The Economist Democracy Index dataset containing comprehensive political governance metrics for 167 countries worldwide. This dataset provides systematic measurement across five critical dimensions that directly impact business operating environments and investment risk profiles.
+The analysis utilizes The Economist Democracy Index dataset containing comprehensive political governance metrics for 167 countries worldwide. This dataset provides systematic measurement across five critical dimensions that directly impact business operating environments and investment risk profiles.
     
-    The democracy assessment framework consists of five categories: electoral process and pluralism, functioning of government, political participation, political culture, and civil liberties [[4](https://www.notion.so/IE-6400-K-means-Clustering-1e999c6af90d806a9722cef047529591?pvs=21)]. These dimensions evaluate various aspects of democratic governance:
+The democracy assessment framework consists of five categories: electoral process and pluralism, functioning of government, political participation, political culture, and civil liberties [[4](https://www.notion.so/IE-6400-K-means-Clustering-1e999c6af90d806a9722cef047529591?pvs=21)]. These dimensions evaluate various aspects of democratic governance:
     
   - **Electoral Process and Pluralism:** Measures fairness of elections, freedom to form political parties, and inclusive political participation
   - **Functioning of Government:** Evaluates governance effectiveness, corruption levels, and decision-making transparency
