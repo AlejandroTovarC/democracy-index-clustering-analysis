@@ -26,11 +26,11 @@ The analysis utilizes The Economist Democracy Index dataset containing comprehen
     
 The democracy assessment framework consists of five categories: electoral process and pluralism, functioning of government, political participation, political culture, and civil liberties [[4](https://ourworldindata.org/grapher/democracy-index-eiu)]. These dimensions evaluate various aspects of democratic governance:
     
-  - **Electoral Process and Pluralism:** Measures fairness of elections, freedom to form political parties, and inclusive political participation
-  - **Functioning of Government:** Evaluates governance effectiveness, corruption levels, and decision-making transparency
-  - **Political Participation:** Assesses public engagement levels, voter turnout, and political party membership
-  - **Political Culture:** Analyzes tolerance for diverse viewpoints and separation of government and religion
-  - **Civil Liberties:** Gauges individual freedoms including press freedom and right to protest
+- **Electoral Process and Pluralism:** Measures fairness of elections, freedom to form political parties, and inclusive political participation.
+- **Functioning of Government:** Evaluates governance effectiveness, corruption levels, and decision-making transparency.
+- **Political Participation:** Assesses public engagement levels, voter turnout, and political party membership.
+- **Political Culture:** Analyzes tolerance for diverse viewpoints and separation of government and religion.
+- **Civil Liberties:** Gauges individual freedoms including press freedom and right to protest.
     
 Countries are traditionally classified into four regime types based on composite scores: Full Democracies, Flawed Democracies, Hybrid Regimes, and Authoritarian Regimes. However, this classification system may not capture the nuanced risk profiles needed for sophisticated investment strategies.
     
