@@ -9,9 +9,9 @@ The core business problem involves **developing a data-driven approach to countr
 This case study leverages The Economist Democracy Index, which includes 167 countries and territories, of which 165 are sovereign states and 164 are UN member states [[3](https://en.wikipedia.org/wiki/The_Economist_Democracy_Index)], providing comprehensive coverage for demonstrating systematic political risk assessment methodologies. The analysis addresses key limitations in traditional approaches while showcasing how clustering techniques can create actionable country segmentation for strategic decision-making.
 
 **References:**
-[1] MSCI (2024). "Understanding Geopolitical Risk in Investments" - https://www.msci.com/www/blog-posts/understanding-geopolitical-risk/04906200027
-[2] Sustainalytics (2024). "Country Risk Ratings" - https://www.sustainalytics.com/investor-solutions/esg-research/country-risk
-[3] Wikipedia (2025). "The Economist Democracy Index" - https://en.wikipedia.org/wiki/The_Economist_Democracy_Index
+- [1] MSCI (2024). "Understanding Geopolitical Risk in Investments" - https://www.msci.com/www/blog-posts/understanding-geopolitical-risk/04906200027
+- [2] Sustainalytics (2024). "Country Risk Ratings" - https://www.sustainalytics.com/investor-solutions/esg-research/country-risk
+- [3] Wikipedia (2025). "The Economist Democracy Index" - https://en.wikipedia.org/wiki/The_Economist_Democracy_Index
 
 Insights and recommendations are provided on the following strategic areas:
 
