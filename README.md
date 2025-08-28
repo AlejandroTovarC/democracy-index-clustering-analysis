@@ -73,7 +73,7 @@ Clustering analysis of The Economist Democracy Index data reveals important insi
   
   **Main insight 3:** The need to choose between k=3, 4, or 5 clusters highlights a fundamental challenge in unsupervised learning applied to political data - **algorithmic objectivity still requires domain expertise** for meaningful interpretation and final parameter selection.
     
-![Elbow Method Analysis](docs/elbow-method.png)
+![Elbow Method Analysis](/docs/democracy-index-elbow-method-plot.png)
     
   ### Category 3: Democratic Transition and Overlap Patterns
   
