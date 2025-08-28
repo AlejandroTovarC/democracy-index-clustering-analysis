@@ -8,13 +8,6 @@ The core business problem involves **developing a data-driven approach to countr
 
 This case study leverages The Economist Democracy Index, which includes 167 countries and territories, of which 165 are sovereign states and 164 are UN member states [[3](https://en.wikipedia.org/wiki/The_Economist_Democracy_Index)], providing comprehensive coverage for demonstrating systematic political risk assessment methodologies. The analysis addresses key limitations in traditional approaches while showcasing how clustering techniques can create actionable country segmentation for strategic decision-making.
 
-**References:**
-- [1] MSCI (2024). "Understanding Geopolitical Risk in Investments" - https://www.msci.com/www/blog-posts/understanding-geopolitical-risk/04906200027
-- [2] Sustainalytics (2024). "Country Risk Ratings" - https://www.sustainalytics.com/investor-solutions/esg-research/country-risk
-- [3] Wikipedia (2025). "The Economist Democracy Index" - https://en.wikipedia.org/wiki/The_Economist_Democracy_Index
-- [4] Our World in Data (2024). "Democracy Index" - https://ourworldindata.org/grapher/democracy-index-eiu
-- [5] Zhang, Y. et al. (2024). "Country risk mapping in a changing world—comparative survey on academic research and industrial practices" - https://link.springer.com/article/10.1007/s13198-024-02600-8
-
 Insights and recommendations are provided on the following strategic areas:
 
 - **Country Risk Segmentation:** Systematic clustering of nations by democratic governance similarity
@@ -24,13 +17,14 @@ Insights and recommendations are provided on the following strategic areas:
 
 The Python clustering analysis and data preprocessing steps can be found [here](https://www.notion.so/democracy_clustering_analysis.ipynb).
 
-Static visualizations and country risk analysis charts can be found [here](https://www.notion.so/visualizations/).
-    
+Visualizations and country risk analysis charts can be found [here](https://www.notion.so/visualizations/).
+
+
 ## Data Structure & Initial Checks
     
 The analysis utilizes The Economist Democracy Index dataset containing comprehensive political governance metrics for 167 countries worldwide. This dataset provides systematic measurement across five critical dimensions that directly impact business operating environments and investment risk profiles.
     
-The democracy assessment framework consists of five categories: electoral process and pluralism, functioning of government, political participation, political culture, and civil liberties [[4](https://www.notion.so/IE-6400-K-means-Clustering-1e999c6af90d806a9722cef047529591?pvs=21)]. These dimensions evaluate various aspects of democratic governance:
+The democracy assessment framework consists of five categories: electoral process and pluralism, functioning of government, political participation, political culture, and civil liberties [[4](https://ourworldindata.org/grapher/democracy-index-eiu)]. These dimensions evaluate various aspects of democratic governance:
     
   - **Electoral Process and Pluralism:** Measures fairness of elections, freedom to form political parties, and inclusive political participation
   - **Functioning of Government:** Evaluates governance effectiveness, corruption levels, and decision-making transparency
@@ -38,32 +32,28 @@ The democracy assessment framework consists of five categories: electoral proces
   - **Political Culture:** Analyzes tolerance for diverse viewpoints and separation of government and religion
   - **Civil Liberties:** Gauges individual freedoms including press freedom and right to protest
     
-    Countries are traditionally classified into four regime types based on composite scores: Full Democracies, Flawed Democracies, Hybrid Regimes, and Authoritarian Regimes. However, this classification system may not capture the nuanced risk profiles needed for sophisticated investment strategies.
+Countries are traditionally classified into four regime types based on composite scores: Full Democracies, Flawed Democracies, Hybrid Regimes, and Authoritarian Regimes. However, this classification system may not capture the nuanced risk profiles needed for sophisticated investment strategies.
     
-  **Data Quality Observations:**
-    The dataset demonstrates high completeness with comprehensive coverage across all 167 countries and five democracy dimensions. Initial analysis revealed no missing values across any variables, ensuring robust analytical foundation. Due to varying scales across democracy indicators, StandardScaler normalization was applied to ensure equal weighting across all clustering variables for optimal algorithm performance.
+**Data Quality Observations:**
+The dataset demonstrates high completeness with comprehensive coverage across all 167 countries and five democracy dimensions. Initial analysis revealed no missing values across any variables, ensuring robust analytical foundation. Due to varying scales across democracy indicators, StandardScaler normalization was applied to ensure equal weighting across all clustering variables for optimal algorithm performance.
+
     
-**Executive Summary**
+## **Executive Summary**
     
-  **Overview of Findings**
+**Overview of Findings**
     
-    Explain  the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
-    
-    [Visualization, including a graph of overall trends or snapshot of a dashboard]
-    
-  **Overview of Findings**
-    
-    Clustering analysis of The Economist Democracy Index data reveals important insights about the complexity of political risk segmentation for investment decisions. While K-means clustering identified five mathematical clusters among 167 countries, **the analysis uncovered significant methodological challenges** including non-spherical data patterns, cluster boundary ambiguities, and inconclusive elbow method results. These findings suggest that **political risk assessment may require more sophisticated approaches** than traditional clustering methods, with **74 countries showing overlapping characteristics** that resist clear categorization. The analysis demonstrates both the potential and limitations of data-driven country risk segmentation.
+Clustering analysis of The Economist Democracy Index data reveals important insights about the complexity of political risk segmentation for investment decisions. While K-means clustering identified five mathematical clusters among 167 countries, **the analysis uncovered significant methodological challenges** including non-spherical data patterns, cluster boundary ambiguities, and inconclusive elbow method results. These findings suggest that **political risk assessment may require more sophisticated approaches** than traditional clustering methods, with **74 countries showing overlapping characteristics** that resist clear categorization. The analysis demonstrates both the potential and limitations of data-driven country risk segmentation.
     
     [Visualization: K-means Clustering Plot showing 5 distinct country risk segments with cluster centers marked]
     
-  **Key Business Implications:**
+**Key Business Implications:**
     
   - **Complexity acknowledgment:** Political risk segmentation faces inherent challenges due to overlapping governance characteristics across countries
   - **Enhanced due diligence rationale:** 74 countries with boundary ambiguities require case-by-case assessment rather than algorithmic classification
   - **Methodological insights:** Alternative clustering validation methods (such as silhouette analysis) and hybrid approaches combining algorithmic segmentation with expert assessment may improve political risk classification accuracy
+
     
- ## Insights Deep Dive
+## Insights Deep Dive
     
   ### Category 1: Country Risk Segmentation Analysis
     
@@ -83,7 +73,7 @@ The democracy assessment framework consists of five categories: electoral proces
   
   **Main insight 3:** The need to choose between k=3, 4, or 5 clusters highlights a fundamental challenge in unsupervised learning applied to political data - **algorithmic objectivity still requires domain expertise** for meaningful interpretation and final parameter selection.
     
-    [Visualization: Elbow method diagram]
+![Elbow Method Analysis](docs/elbow-method.png)
     
   ### Category 3: Democratic Transition and Overlap Patterns
   
@@ -95,7 +85,7 @@ The democracy assessment framework consists of five categories: electoral proces
   
   **Main insight 4:** Cluster boundaries show **20-30 countries near decision thresholds**, suggesting that approximately 15-20% of global markets require dynamic rather than static risk assessment methodologies.
     
-    [Visualization: Density Plot showing cluster overlap zones]
+![Density Plot Analysis](docs/density-plot.png)
     
   ### Category 4: Strategic Investment Classification Framework
   
@@ -110,48 +100,50 @@ The democracy assessment framework consists of five categories: electoral proces
     [Visualization: Strategic Investment Tier Classification by Cluster]
   
     
-  ## **Recommendations**
+## **Recommendations**
     
-  Based on the clustering analysis findings and boundary interpretation challenges, the following guidance is recommended for political risk assessment applications:
+Based on the clustering analysis findings and boundary interpretation challenges, the following guidance is recommended for political risk assessment applications:
   
-  **Political Risk Assessment Applications:**
+**Political Risk Assessment Applications:**
   
-  - **Treat clustering results as screening tools** rather than definitive classifications, particularly for the 74 countries showing boundary ambiguities between adjacent clusters.
-  - **Focus on trend monitoring and movement patterns** between clusters over time rather than relying on static country assignments, since political risk exists on continuums rather than discrete categories.
-  - **Implement manual review processes** for countries in transition zones (Clusters 2-4 boundaries) where algorithmic classification shows uncertainty and human expertise becomes critical for accurate assessment.
-  - **Use cluster groupings to identify peer countries** for comparative analysis rather than as standalone risk ratings, leveraging the similarity patterns revealed by the algorithm.
-  
-  **Methodological Considerations:**
-  
-  - **Apply multiple validation methods** including silhouette analysis to strengthen confidence in cluster boundaries, as the elbow method alone produced inconclusive results for optimal cluster selection.
-  - **Cross-validate results using multiple clustering algorithms** (hierarchical, DBSCAN) to ensure robustness, given the non-spherical nature of political data that challenges K-means assumptions.
-  
-  **Implementation Strategy:**
-  
-  - **Combine algorithmic insights with domain expertise** for final political risk assessments, recognizing that clustering reveals patterns but cannot replace expert judgment for complex political phenomena.
+- **Treat clustering results as screening tools** rather than definitive classifications, particularly for the 74 countries showing boundary ambiguities between adjacent clusters.
+- **Focus on trend monitoring and movement patterns** between clusters over time rather than relying on static country assignments, since political risk exists on continuums rather than discrete categories.
+- **Implement manual review processes** for countries in transition zones (Clusters 2-4 boundaries) where algorithmic classification shows uncertainty and human expertise becomes critical for accurate assessment.
+- **Use cluster groupings to identify peer countries** for comparative analysis rather than as standalone risk ratings, leveraging the similarity patterns revealed by the algorithm.
+
+**Methodological Considerations:**
+
+- **Apply multiple validation methods** including silhouette analysis to strengthen confidence in cluster boundaries, as the elbow method alone produced inconclusive results for optimal cluster selection.
+- **Cross-validate results using multiple clustering algorithms** (hierarchical, DBSCAN) to ensure robustness, given the non-spherical nature of political data that challenges K-means assumptions.
+
+**Implementation Strategy:**
+
+- **Combine algorithmic insights with domain expertise** for final political risk assessments, recognizing that clustering reveals patterns but cannot replace expert judgment for complex political phenomena.
+
 
 ## Assumptions and Caveats:
-    
-    Throughout the clustering analysis, several key assumptions and limitations should be considered when interpreting the results:
-    
-    **Data Framework Limitations:**
-    
-    - **Assumes The Economist's 5-dimension framework captures all relevant political risk factors.** The analysis relies solely on electoral process, government functioning, political participation, political culture, and civil liberties metrics, potentially overlooking other factors that influence political stability and risk assessment.
-    
-    **Methodological Constraints:**
-    
-    - **K-means assumes spherical clusters, which is violated by political data.** The non-spherical nature of democracy scores creates boundary ambiguities and interpretation challenges that affect cluster validity and practical applications.
-    - **Chose k=5 based on ambiguous elbow method results without additional validation methods.** The elbow method provided inconclusive guidance with potential k-values ranging from 3-5, and alternative validation approaches (such as silhouette analysis, gap statistic, or cross-validation) would be needed to provide stronger confidence in optimal cluster selection.
-    
-    **Interpretation Boundaries:**
-    
-    - **Cluster boundaries represent mathematical groupings, not definitive political categories.** The 74 countries showing boundary ambiguities demonstrate that algorithmic classifications should be treated as analytical tools rather than authoritative political assessments.
-    
-    **Analytical Scope:**
-    
-    - **Analysis covers governance dimensions only, excluding economic, geographic, and cultural factors.** Political risk in practice involves multiple interconnected factors beyond democratic governance metrics, limiting the comprehensiveness of clustering-based risk assessment approaches.
+
+Throughout the clustering analysis, several key assumptions and limitations should be considered when interpreting the results:
+
+**Data Framework Limitations:**
+
+- **Assumes The Economist's 5-dimension framework captures all relevant political risk factors.** The analysis relies solely on electoral process, government functioning, political participation, political culture, and civil liberties metrics, potentially overlooking other factors that influence political stability and risk assessment.
+
+**Methodological Constraints:**
+
+- **K-means assumes spherical clusters, which is violated by political data.** The non-spherical nature of democracy scores creates boundary ambiguities and interpretation challenges that affect cluster validity and practical applications.
+- **Chose k=5 based on ambiguous elbow method results without additional validation methods.** The elbow method provided inconclusive guidance with potential k-values ranging from 3-5, and alternative validation approaches (such as silhouette analysis, gap statistic, or cross-validation) would be needed to provide stronger confidence in optimal cluster selection.
+
+**Interpretation Boundaries:**
+
+- **Cluster boundaries represent mathematical groupings, not definitive political categories.** The 74 countries showing boundary ambiguities demonstrate that algorithmic classifications should be treated as analytical tools rather than authoritative political assessments.
+
+**Analytical Scope:**
+
+- **Analysis covers governance dimensions only, excluding economic, geographic, and cultural factors.** Political risk in practice involves multiple interconnected factors beyond democratic governance metrics, limiting the comprehensiveness of clustering-based risk assessment approaches.
+
  
-  ## Data Quality Assessment
+## Data Quality Assessment
 
 Throughout the analysis, data quality testing was performed to ensure reliable clustering results, though several methodological challenges were identified that impact interpretation.
 
@@ -164,3 +156,10 @@ Throughout the analysis, data quality testing was performed to ensure reliable c
 **Clustering Validation Limitations:** The elbow method for determining optimal cluster numbers produced ambiguous results, failing to provide clear guidance on K selection. Density plot analysis subsequently revealed significant overlap between multiple clusters, particularly between clusters 1 and 3, and between clusters 1 and 4, indicating that cluster boundaries are not well-defined for a substantial portion of countries in the dataset.
 
 **Impact on Analysis Conclusions:** While the underlying democracy data is of high quality and completeness, the methodological challenges identified suggest that conclusions about discrete country risk categories should be interpreted cautiously. The analysis demonstrates both the potential and limitations of applying traditional clustering methods to complex political governance data.
+
+## References:
+- [1] MSCI (2024). "Understanding Geopolitical Risk in Investments" - https://www.msci.com/www/blog-posts/understanding-geopolitical-risk/04906200027
+- [2] Sustainalytics (2024). "Country Risk Ratings" - https://www.sustainalytics.com/investor-solutions/esg-research/country-risk
+- [3] Wikipedia (2025). "The Economist Democracy Index" - https://en.wikipedia.org/wiki/The_Economist_Democracy_Index
+- [4] Our World in Data (2024). "Democracy Index" - https://ourworldindata.org/grapher/democracy-index-eiu
+- [5] Zhang, Y. et al. (2024). "Country risk mapping in a changing world—comparative survey on academic research and industrial practices" - https://link.springer.com/article/10.1007/s13198-024-02600-8
