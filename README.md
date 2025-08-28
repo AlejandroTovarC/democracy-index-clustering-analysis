@@ -85,7 +85,7 @@ Clustering analysis of The Economist Democracy Index data reveals important insi
   
   **Main insight 4:** Cluster boundaries show **20-30 countries near decision thresholds**, suggesting that approximately 15-20% of global markets require dynamic rather than static risk assessment methodologies.
     
-![Density Plot Analysis](docs/density-plot.png)
+![Density Plot Analysis](/docs/democracy-index-density-plot.png)
     
   ### Category 4: Strategic Investment Classification Framework
   
