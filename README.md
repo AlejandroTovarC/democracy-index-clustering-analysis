@@ -15,7 +15,7 @@ Insights and recommendations are provided on the following strategic areas:
 - **Democratic Transition Patterns:** Identification of countries showing governance improvement or deterioration trends
 - **Strategic Investment Recommendations:** Risk-adjusted market entry and portfolio allocation guidance
 
-The Python clustering analysis and data preprocessing steps can be found [here](https://www.notion.so/democracy_clustering_analysis.ipynb).
+The Python clustering analysis and data preprocessing steps can be found [here](/scripts).
 
 Visualizations and country risk analysis charts can be found [here](https://www.notion.so/visualizations/).
 
