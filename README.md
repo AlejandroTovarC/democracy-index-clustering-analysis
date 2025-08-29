@@ -17,7 +17,7 @@ Insights and recommendations are provided on the following strategic areas:
 
 The Python clustering analysis and data preprocessing steps can be found [here](/scripts).
 
-Visualizations and country risk analysis charts can be found [here](https://www.notion.so/visualizations/).
+Visualizations and country risk analysis charts can be found [here](/scripts/03_visualizations.ipynb).
 
 
 ## Data Structure & Initial Checks
